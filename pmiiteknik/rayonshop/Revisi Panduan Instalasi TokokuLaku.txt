@@ -1,0 +1,9 @@
+Pengaturan SMTP [Jika di hosting]
+
+1. Buat email di hosting/cpanel (pada menu Email Accounts)
+2. Masuk ke pengaturan umum admin.
+3. Isi kolom
+e. SMTP Host: ssl://mail.domain.com
+f. SMTP Port: tanyakan kepada penyedia hostingnya
+g. Akun Mail: Mail yang tadi dibuat, misal no-reply@domain.com
+h. Password Mail: Password emailnya

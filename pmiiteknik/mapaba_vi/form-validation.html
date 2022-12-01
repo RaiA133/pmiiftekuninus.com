@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MAPABA VI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+  
+    <div class="form-container slide1-form">
+        <div class="form-box slide1-box">
+            <h2>MAPABA VI</h2>
+
+            <!-- Arti Singkat Mapaba -->
+            <div class="pengertian">
+                <p><b>Masa Penerimaan Anggota Baru (MAPABA)</b> merupakan proses pertama dalam menyeleksi dan menerima anggota organisasi Pergerakan Mahasiswa Islam Indonesia (PMII).</p>
+            </div><br>
+            <div class="pengertian">
+                <p>Alhamdulillahi Robbil `Alamin (الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ)</p>
+            </div><br>
+            <div class="pengertian">
+                <b>Mapaba VI</b> sudah terlaksana dengan sangat baik pada tanggal 28-30 Oktober 2022, dengan ini kami seluruh jajaran panitia dan anggota kader PMII Fakultas Rayon Teknik Komisariat Uninus mengucapkan Selamat Bergabung dikeluarga besar PMII Komisariat Universitas Islam Nusantara</p>
+            </div><br>
+            <div class="pengertian">
+                <p>Salam Pergerakan !!!</p>
+            </div><br>
+            <div class="sosmed">
+                <p class="tulisan">Kunjungi Sosial Media Kita di...</p>
+                <div class="pilihan-sosmed">
+
+                    <a target="_blank" href="https://www.pmii.id/"><img src="images/PMII.png" alt="PB PMII Web Official" title="PB PMII Web Official"></a>
+
+                    <a target="_blank" href="https://www.instagram.com/pmiiteknik_uninus/"><img src="images/instagram.webp" alt="instagram PMII FTEK uninus" title="Instagram Official PMII FTEK uninus"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- konten penjelasan MAPABA -->
+        <div class="imgBoxPMII slide1-imgBox">
+            <div class="sliding-link">
+                <div class="kotak-hal1">
+                    <p>Download Sertifikat</p>
+                    <span class="tombol-daftar">Mapaba Anda</span>
+                </div>
+            </div>
+            <img src="images/PMII.png" alt="foto">
+        </div> 
+
+    </div>
+
+
+<!-- BEDA HALAMAN -->
+
+
+    <div class="form-container slide2-form">
+        <!-- konten penjelasan MAPABA -->
+        <div class="imgBoxPMII slide2-imgBox">
+            <div class="sliding-link">
+                <div class="kotak-hal2">
+                    <p></p>
+                    <span class="tombol-penjelasan">Kembali</span>
+                </div>
+            </div>
+            <img src="images/Logo Rayon Teknik.png" alt="foto">
+        </div> 
+
+        <!-- FORM PENDAFATARAN -->
+        <div class="form-box slide2-box">
+            <h2>Download Sertifikat</h2>
+            <form action="process-form.php" method="post">
+                
+                <div class="field">
+                    <i class="uil uil-user"></i>
+                    <!-- autocomplete="off" untuk menghilangkan save data form html -->
+                    <input type="text" placeholder=" NIM" name="nim" autocomplete="off" required >
+                </div>
+            
+                <div class="field2">
+                    <i class="uil uil-book-open"></i>
+                    <select id="jurusan" name="jurusan">
+                        <option class="null-jurusan" value="0">jurusan</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Ilmu Hukum">Ilmu Hukum</option>
+                        <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+                        <option value="Ilmu Perpustakaan">Ilmu perpustakaan</option>
+                        <option value="Komunikasi & Penyiaran Islam">Komunikasi & Penyiaran Islam</option>
+                        <option value="Perbankan Syariah">Perbankan Syariah</option>
+                        <option value="Pendidikan Agama Islam">Pendidikan Agama Islam</option>
+                        <option value="Pendidikan Guru Madrasah Ibtidaiyah">Pendidikan Guru Madrasah Ibtidaiyah</option>
+                        <option value="Pendidikan Luar Biasa">Pendidikan Luar Biasa</option>
+                        <option value="Pendidikan Luar Sekolah">Pendidikan Luar Sekolah</option>
+                        <option value="Pendidikan Bahasa & Sastra Indonesia">Pendidikan Bahasa & Sastra Indonesia</option>
+                        <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
+                        <option value="Pendidikan Bahasa Arab">Pendidikan Bahasa Arab</option>
+                        <option value="Pendidikan Matematika">Pendidikan Matematika</option>
+                        <option value="PG PAUD">PG PAUD</option>
+                        <option value="PPKn">PPKn</option>
+                        <option value="Perbankan Syariah">Perbankan Syariah</option>
+                        <option value="Agroteknologi">Agroteknologi</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Manajemen">Manajemen</option>
+                    </select>
+                </div>
+        
+                <input class="tombol-submit" type="submit" value="Kirim" name="kirim">
+            </form>
+            
+        </div>
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        //input field focus effect
+        const textInput = document.querySelectorAll("input");
+
+        textInput.forEach(textInput => {
+
+            //ketika input di klik maka akan mengaktifkan field script
+            textInput.addEventListener("focus", () => {
+                let parent = textInput.parentNode;
+                parent.classList.add("active");
+            });
+
+            //mematikan field script ketika klik field yang lain
+            textInput.addEventListener("blur", () => {
+                let parent = textInput.parentNode;
+                parent.classList.remove("active");
+            });
+        });
+
+        //perpindahan halaman1 & halaman2
+        const tombolkeHal2 = document.querySelector(".kotak-hal1"); // ".tombol-daftar",
+        const tombolkeHal1 = document.querySelector(".kotak-hal2"); // ".tombol-penjelasan",
+        const pindahkeHal2 = document.querySelector(".slide2-form");
+        const pindahkeHal1 = document.querySelector(".slide1-form");
+         
+        //penambahan "hide" & "show", jika muncul di inspect maka berhasil
+        //fungsi tampilkan dan hilangkan konten ketika di klik lalu pindah ke slide 2
+        tombolkeHal2.addEventListener("click", () => {
+            pindahkeHal1.classList.add("hide");
+            pindahkeHal2.classList.add("show");
+            pindahkeHal1.classList.remove("show");
+            pindahkeHal2.classList.remove("hide");
+            window.scrollTo(0,0);
+
+        });
+        
+        //fungsi tampilkan dan hilangkan konten ketika di klik lalu pindah ke slide 1
+        tombolkeHal1.addEventListener("click", () => {
+            pindahkeHal1.classList.remove("hide");
+            pindahkeHal2.classList.remove("show");
+            pindahkeHal1.classList.add("show");
+            pindahkeHal2.classList.add("hide");
+            window.scrollTo(0,0);
+
+        });
+    </script>
+</body>
+<!-- <footer>
+    <div class="kopikanan">
+        <p>copyright &copy;2022 Raie Aswajjillah</p>
+    </div>
+</footer> -->
+</html>

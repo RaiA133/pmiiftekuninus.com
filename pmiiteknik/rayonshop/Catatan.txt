@@ -1,0 +1,14 @@
+Menggunakan payment gateway midtrans
+
+Cara kerjanya:
+-> Membuka website
+-> Login ke akun masing-masing, atau daftar jika belum memiliki akun
+-> Pilih barang
+-> Masukan keranjang
+-> Isi data pengiriman
+-> Pilih metode pembayaran
+-> Transfer sejumlah uang ke nomer yang sudah di generate
+-> Status langsung terganti menjadi sudah dibayar (sehingga tidak perlu lagi konfirmasi ke admin)
+-> Tunggu barangnya datang
+
+Di versi ini bisa melihat status pesanan, detail pesanan, riwayat pesanan, dan edit profil

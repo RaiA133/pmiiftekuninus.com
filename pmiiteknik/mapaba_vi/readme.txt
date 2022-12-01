@@ -1,0 +1,1 @@
+data masih input manual di phpmyadmin
